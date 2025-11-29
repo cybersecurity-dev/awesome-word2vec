@@ -1,4 +1,8 @@
-# Awesome [Word2vec](https://en.wikipedia.org/wiki/Word2vec) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<div align="center">
+
+# **`Awesome`** [Word2vec](https://wikipedia.org/wiki/Word2vec) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+</div>
+
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)]() 
 [![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)]()
 
@@ -22,8 +26,11 @@
 - [Contributors](#contributors)
 
 
-## Continuous [bag-of-words](https://en.wikipedia.org/wiki/Bag-of-words_model) (CBOW)
+## Continuous [bag-of-words](https://wikipedia.org/wiki/Bag-of-words_model) ([CBOW](https://www.tensorflow.org/text/tutorials/word2vec))
 
+<details>
+<summary>CBOW Flowchart</summary>
+ 
 ```mermaid
 flowchart LR
  subgraph Input["INPUT"]
@@ -48,11 +55,15 @@ flowchart LR
     style Projection color:#000000,fill:#BBDEFB
     style Output color:#000000,fill:#FFCDD2
 ```
+</details>
 
 ---
 ---
 
-## Skip-gram
+## [Skip-gram](https://radimrehurek.com/gensim/models/word2vec.html)
+
+<details>
+<summary>Skip-gram Flowchart</summary>
 
 ```mermaid
 flowchart LR
@@ -75,8 +86,7 @@ flowchart LR
     style INPUT color:#000000,fill:#FFF9C4
     style OUTPUT fill:#FFCDD2,color:#000000
 ```
-
-
+</details>
 
 
 ##
