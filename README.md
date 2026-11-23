@@ -63,8 +63,38 @@ mindmap
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
----
----
+```mermaid
+flowchart TB
+    T[Text Representation] --> TF[TF-IDF]
+    T --> W[Word2Vec]
+
+    TF --> TF1[Calculate term frequency]
+    TF1 --> TF2[Calculate inverse document frequency]
+    TF2 --> TF3[Create sparse vectors]
+    TF3 --> TF4[Measure term importance]
+
+    W --> WV[Create dense word vectors]
+    WV --> C[CBOW]
+    WV --> S[Skip-gram]
+
+    C --> C1[Context words]
+    C1 --> C2[Predict target word]
+    C2 --> C3["the cat ___ the mat → sat"]
+
+    S --> S1[Target word]
+    S1 --> S2[Predict context words]
+    S2 --> S3["sat → cat, on"]
+
+    TF4 --> A[Text Classification]
+    C3 --> A
+    S3 --> A
+
+    style TF fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style W fill:#ede9fe,stroke:#7c3aed,stroke-width:2px
+    style C fill:#dbeafe,stroke:#2563eb,stroke-width:2px
+    style S fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style A fill:#fce7f3,stroke:#db2777,stroke-width:2px
+```
 
 ## 📖 Contents
 - [CBOW](#continuous-bag-of-words-cbow)
