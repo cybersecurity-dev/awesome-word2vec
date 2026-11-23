@@ -108,6 +108,25 @@ flowchart LR
 ---
 ---
 
+```mermaid
+flowchart LR
+    W[Word2Vec] --> C[CBOW]
+    W --> S[Skip-gram]
+
+    C --> C1[Multiple context words]
+    C1 --> C2[Predict one target word]
+    C2 --> C3["Example: the cat ___ the mat → sat"]
+    C3 --> C4[Faster; strong for frequent words]
+
+    S --> S1[One target word]
+    S1 --> S2[Predict surrounding context]
+    S2 --> S3["Example: sat → cat, on"]
+    S3 --> S4[Slower; strong for rare words]
+
+    style C fill:#dbeafe,stroke:#2563eb
+    style S fill:#dcfce7,stroke:#16a34a
+```
+
 ## [Skip-gram](https://radimrehurek.com/gensim/models/word2vec.html)
 
 <details>
