@@ -52,7 +52,7 @@ mindmap
 </div>
 
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)]() 
-[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)]()
+[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/LanguageTechnology/new/)
 
 <p align="center">
     <a href="https://github.com/cybersecurity-dev/"><img height="25" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/github.svg" alt="GitHub"></a>
@@ -102,6 +102,22 @@ flowchart TB
 - [My Other Awesome Lists](#my-other-awesome-lists)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
+
+
+
+| Feature | TF-IDF | Word2Vec CBOW | Word2Vec Skip-gram |
+|---|---|---|---|
+| Approach | Statistical weighting | Neural-network embedding | Neural-network embedding |
+| Input | Collection of documents | Surrounding context words | One target word |
+| Prediction | None | Predict the target word | Predict surrounding words |
+| Direction | Terms → Importance scores | Context → Target | Target → Context |
+| Output | Sparse vectors | Dense vectors | Dense vectors |
+| Semantic relationships | Limited | Good | Strong |
+| Word order | Not preserved | Not preserved within the context window | Learned indirectly from target-context pairs |
+| Rare words | Usually weak | Less effective | More effective |
+| Training speed | Very fast | Fast | Slower |
+| Best suited for | Search and document classification | Frequent words and large datasets | Rare words and semantic relationships |
+| Example | Identify important terms in malware reports | `the cat ___ the mat` → `sat` | `sat` → `cat`, `on` |
 
 
 ## Continuous [bag-of-words](https://wikipedia.org/wiki/Bag-of-words_model) ([CBOW](https://www.tensorflow.org/text/tutorials/word2vec))
