@@ -1,5 +1,53 @@
 <div align="center">
 
+```mermaid
+mindmap
+  root((Word2Vec))
+    Goal
+      Convert words into vectors
+      Capture semantic relationships
+
+    Models
+      CBOW
+        Context predicts target
+        Faster
+      Skip-gram
+        Target predicts context
+        Better for rare words
+
+    Training
+      Text corpus
+      Context window
+      Negative sampling
+      Hierarchical softmax
+
+    Output
+      Static word embeddings
+      Similar words have nearby vectors
+      Word analogies
+
+    Applications
+      Classification
+      Search
+      Clustering
+      NLP feature extraction
+
+    Advantages
+      Simple
+      Efficient
+      Scalable
+
+    Limitations
+      One vector per word
+      Out-of-vocabulary words
+      Cannot capture changing context
+
+    Extensions
+      FastText
+      Doc2Vec
+      BERT
+```
+
 # **`Awesome`** [Word2vec](https://wikipedia.org/wiki/Word2vec) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 </div>
 
@@ -9,7 +57,7 @@
 <p align="center">
     <a href="https://github.com/cybersecurity-dev/"><img height="25" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/github.svg" alt="GitHub"></a>
     &nbsp;
-    <a href="https://www.youtube.com/@CyberThreatDefence"><img height="25" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/youtube.svg" alt="YouTube"></a>
+    <a href="https://www.youtube.com/@CyberThreatDefense"><img height="25" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/youtube.svg" alt="YouTube"></a>
     &nbsp;
     <a href="https://cyberthreatdefence.com/my_awesome_lists"><img height="20" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/blog.svg" alt="My Awesome Lists"></a>
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
